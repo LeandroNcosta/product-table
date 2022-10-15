@@ -17,6 +17,6 @@ A visualização da aplicação pelo navegador <a href="https://leandroncosta.gi
 ## Demonstração
 
 <video controls>
-  <source src="src/images/demonstracao.mp4" type="video/mp4">
+  <source src="src/demonstracao.mp4" type="video/mp4">
   <source src="movie.ogg" type="video/ogg">
 </video>
