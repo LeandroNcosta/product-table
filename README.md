@@ -3,6 +3,7 @@
 </h1>
 
 ## :page_facing_up: O que é ?
+<br/>
  A aplicação é uma tabela no qual pode ser adicionar, cadastrar e remover itens. Os itens da tabela é por ordem crescente baseado no preço.
  também checa se os campos de entrada está correto
 
