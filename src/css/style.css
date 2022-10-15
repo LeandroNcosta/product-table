@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+table {
+  font-family: "Poppins", sans-serif;
+  color: #e6e3e380;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.container-table {
+  overflow: auto;
+  min-width: 60%;
+  max-height: 35rem;
+  margin-bottom: 1rem;
+}
+
+table {
+  text-align: center;
+  font-style: italic;
+  width: 100%;
+  color: #e6e3e380;
+  border: 5px solid #008000;
+  border-radius: 0.5rem;
+  box-shadow: -10px 10px 32px #0000004d, 10px -10px 32px #0000004d;
+}
+
+caption {
+  text-align: center;
+}
+
+.table td,
+.table th {
+  border: 1px solid #51585f99;
+  padding: 1rem;
+  color: #e6e3e3cc;
+}
+
+.table td:nth-child(odd) {
+  color: #df7218;
+  letter-spacing: 0.02rem;
+}
+.table td:last-child {
+  color: #e6e3e3cc;
+}
+
+.table th {
+  color: #e6e3e399;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container-table h1 {
+  font-size: 2rem;
+  margin: 2rem;
+  text-align: center;
+  color: #198754;
+}
+
+.form-add-todo {
+  background-color: #00000066;
+  border-radius: 1rem;
+  box-shadow: -10px 10px 32px #00000033, 10px -10px 32px #00000033;
+  padding: 3rem;
+  margin-top: 1rem;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 430px;
+}
+
+.title-products {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  color: #198754;
+}
+
+input[type="text"],
+input[type="text"]:focus {
+  color: #000;
+  border: none;
+  background: #ffffffb3;
+  max-width: 400px;
+}
+
+input[type="text"]::placeholder {
+  color: #000;
+}
+
+label {
+  margin: 1rem 1rem 1rem 0;
+  font-style: italic;
+}
+
+i {
+  cursor: pointer;
+  transition: 200ms;
+}
+i:hover {
+  color: #961212;
+  font-size: 1.3rem;
+}
+
+input[type="radio"] {
+  opacity: 0.5;
+}
+
+.status {
+  margin: 1rem;
+  color: #c71313;
+}
+
+/* SCROLS */
+
+.container-table::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+.container-table::-webkit-scrollbar-button {
+  width: 10px;
+}
+
+.container-table::-webkit-scrollbar-thumb {
+  background-color: #ffffff33;
+  border-radius: 30px;
+  width: 10px;
+}
+.container-table::-webkit-scrollbar-track {
+  background-color: #0000001a;
+  border-radius: 30px;
+  width: 10px;
+}
+
+/* Media Query */
+
+@media (max-width: 650px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .form-add-todo {
+    align-self: center;
+  }
+}
